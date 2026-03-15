@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First CSS Class</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* INTERNAL CSS */
+</style>
+<body>
+    <!-- 
+        CSS : Cascading Stylesheet
+
+        Three Types:
+        1. Inline : It means to write css within the HTML Tag
+        2. Internal :: It means writing css in HTML File
+        3. External : Creating the external css file & linking them with HTML
+
+    -->
+    <!-- Inline CSS -->
+    <!-- <h1 style="background-color: red; color: blue;">Hello</h1> -->
+
+    <!-- 
+        Selectors of CSS
+        1. Universal is denoted by * , applies on the whole body
+        2. Id is denoted by # , it must be unique
+        3. Class is denoted by .(dot)
+        4. Tagname is denoted by tagname
+    -->
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias itaque officiis excepturi odio numquam, harum optio in! Quaerat illum et laudantium officia earum eligendi perspiciatis nostrum blanditiis provident hic, dolores libero aliquid corporis dolorem animi fugiat ab quas sed nam pariatur iure, adipisci praesentium eveniet reiciendis. Et, nulla expedita! Quae necessitatibus voluptatum dicta aut nobis aspernatur eaque, aliquam aliquid rem, facilis dolores doloremque eveniet aperiam reiciendis vero sequi odio, impedit dignissimos quaerat consequatur quisquam ad delectus ea facere. Facere, obcaecati ad. Odio nulla provident iusto eius rem recusandae minus dolor nesciunt dolorum facilis at cumque earum quam delectus, incidunt iure.
+    </p>
+
+    <div id="unique">
+        my name is ayush
+    </div>
+    <div class="one">
+        my name is ayush
+    </div>
+    
+    <hr>
+
+    <!-- 
+        Border: 
+        Box model : padding & margin
+`       display : inline,inlin-block,block
+        position : 5 types
+        1.Static(default) where we cannot move any object
+        2. ABsolute
+        3.Relative
+        4.Fixed
+        5. Sticky
+    -->
+         <hr>
+    <div class="mbox"></div>
+
+    <div class="box"></div>
+
+    <hr>
+
+    <div class="content">
+        hello
+    </div>
+   
+    <hr>
+    <p style="background-color: red; display: inline;">h</p>
+    <span style="background-color: blue; display: block;">h</span>
+
+    <p style="display: inline-block; background-color: green;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, obcaecati. Esse facere repellendus corporis est nemo ab laborum laudantium minima, eius ut? Dolore, debitis temporibus. Alias id possimus quod tenetur!
+        ius ut? Dolore, debitis temporibus. Alias id possimus quod tenetur!
+    </p>
+
+    <!-- 
+        1.Static(default) where we cannot move any object
+        2. ABsolute : It means it will move from its parent position.
+        3.Relative: It means it will move from its own position.
+        4.Fixed : It means it leaves his space and fixed it's position from parent
+        5. Sticky 
+    -->
+    <hr>
+    <div class="mbox"></div>
+</body>
+</html>

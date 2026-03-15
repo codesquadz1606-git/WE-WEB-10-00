@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Class</title>
+</head>
+<body>
+    <!-- 
+        table tag : combination of rows & columns
+        table tag -- tr(table row) -- td/th(for table column)
+
+        td & th
+        td : table data
+        th : table head
+    -->
+
+    <table border="1" cellspacing="0" cellpadding="20">
+        <tr>
+            <th>S.no</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Blood Group</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Satyam</td>
+            <td>23</td>
+            <td>A+</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Nitin</td>
+            <td>25</td>
+            <td>O+</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Kusum</td>
+            <td>20</td>
+            <td>O-</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Lalit</td>
+            <td>28</td>
+            <td>B+</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1">
+        <tr>
+            <th>flkvrnl</th>
+            <th>evjlnhv;</th>
+            <th>vlkejr</th>
+        </tr>
+        <tr>
+            <td>reihjl;vk'</td>
+            <td>reihjl;vk'</td>
+            <td>reihjl;vk'</td>
+        </tr>
+        <tr>
+            <td>;lkefjvpo;</td>
+            <td>;lkefjvpo;</td>
+            <td>;lkefjvpo;</td>
+        </tr>
+        <tr>
+            <td>elwfkwvhipo</td>
+            <td>elwfkwvhipo</td>
+            <td>elwfkwvhipo</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- 
+        row merge / vertical merge : rowspan
+        column merge / horizontal merge :colspan
+    -->
+
+    <table border="1">
+        <tr>
+            <th>Level 1</th>
+            <th>Level 2</th>
+            <th>Level 3</th>
+            <th>Info</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td rowspan="6">System</td>
+            <td rowspan="4">System Apps</td>
+            <td rowspan="3">System Env</td>
+            <td>App Test</td>
+            <td>foo</td>
+        </tr>
+        <tr>
+            <td>App Memory</td>
+            <td>foo</td>
+        </tr>
+        <tr>
+            <td>App Test</td>
+            <td>Bar</td>
+        </tr>
+        <tr>
+            <td>System ENV 2</td>
+            <td>App Test</td>
+            <td>Bar</td>
+        </tr>
+        <tr>
+            <td rowspan="2">System Memory</td>
+            <td rowspan="2">Memory Test</td>
+            <td>Memory func</td>
+            <td>foo</td>
+        </tr>
+        <tr>
+            <td>Apes Test</td>
+            <td>foo</td>
+        </tr>
+    </table>
+    <hr>
+
+    <table border="1" cellpadding="30">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td rowspan="4"></td>
+            <td></td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td rowspan="5"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="2" colspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="3"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td rowspan="2" colspan="2"></td>
+            <td></td>
+            <td rowspan="2" colspan="3"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

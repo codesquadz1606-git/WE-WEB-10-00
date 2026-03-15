@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+}
+
+.navbar{
+    padding: 40px;
+    border-bottom: 2px solid grey;
+}
+
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.navigation{
+    width: 50%;
+    margin: 0px auto;
+    text-align: center;
+
+    font-size: 20px;
+}
+
+.navigation ul li{
+    display: inline;
+    margin-left: 15px;
+}
+
+.navigation ul li:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+.buttons{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.buttons .btn{
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+.bone{
+    background-color: blue;
+    border: none;
+}
+
+.bone:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.btwo{
+    border: 2px solid white;
+}
+
+.btwo:hover{
+    border: none;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.left-content{
+    width: 50%;
+    height: 625px;
+    position: absolute;
+    left: 0px;
+}
+
+.right-content{
+    width: 50%;
+    height: 625px;
+    position: absolute;
+    right: 0px;
+}
