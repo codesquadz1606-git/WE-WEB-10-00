@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIrst JS</title>
+</head>
+
+<body>
+    <!-- 
+        What is JS?
+        Javascript is used to add an functionality in our application.
+
+        Js is of three types:
+        Inline : In this we will write JS in HTML tag itself.
+        Internal : We will write JS in our HTML file.
+        External : In this we have to create a external file and link this with our HTML file.
+    -->
+
+    <!-- Inline JS -->
+    <!-- <button onclick="console.log('Clicked')">Click Here</button> -->
+
+    <!-- External JS -->
+    <!-- <script src="script.js"></script> -->
+
+
+    <!-- Chapter No 1 : Introduction To JS  -->
+    <!-- What is Variable?
+        Variable is a container that stores some value at the memory.
+        var_name=value 
+    -->
+
+    <!-- 
+        What is Keywords?
+        JS has 3 keywords 
+        1. let : ES6 version
+        2. var
+        3. const
+    -->
+
+    <script>
+        // Internal JS
+        // name="Ayush"
+        // console.log(name)
+
+        // Diffrence b/w let , var & const?
+
+        // In let keyword we can reintialize the value but cannnot redeclare the variable.
+        // let a=10
+        // console.log(a)
+
+        // let a=100 // not allowed.
+        // console.log(a)
+
+        // Var can reintialize & redeclare any variable.
+        // var a=10
+        // console.log(a)
+
+        // var a=100 // allowed
+        // console.log(a)
+
+        // In const keyword we cannot redeclare or reintialize any variable.
+        // const a=10;
+        // console.log(a)
+
+        // a=100 // not allowed
+        // // const a=100 // not allowed
+        // console.log(a)
+
+        // alert : It is a popup display on the screen whenever it is called.
+        // alert("Hello Everyone")
+
+        // console.warn("Dangerous")
+        // console.error("Some Error")
+
+        // Template Literal : It  is used to write any sentence and variable combined.
+        // let firstName="Ayush"
+        // let lastName="Kumar"
+        // let marks=93
+
+        // console.log("My first name is",firstName,"and my last name is",lastName,"My percentage is",marks)
+
+        // console.log(`My name is ${firstName} and my last name is ${lastName}. My perchantage is ${marks/100}`)
+
+        // Chapter 2: Operators in JS
+        // What is operators?
+        // Operation b/w two or more operands is known as operators.
+
+
+        // Type of operators:
+        // 1. Arthemetic : +,-,*,/,%,**
+        // let a=10
+        // let b=4
+
+        // console.log(a+b)
+        // console.log(a-b)
+        // console.log(a*b)
+        // console.log(a/b) // Quitoent
+        // console.log(a%b) // remainder
+        // console.log(a**b)
+
+        // 2. Relational : <,>,<=,>=,==,!=,===(only in JS) (It gives the relation in boolean value)
+        // let a=23
+        // let b=21
+
+        // console.log(a<b)
+        // console.log(a>b)
+        // console.log(a>=b)
+        // console.log(a<=b)
+        // console.log(a==b)
+        // console.log(a!=b)
+
+        // Diffrence b/w == & ===
+        // let a=10
+        // let b="10"
+
+        // console.log(a==b) // it only matches the value.
+        // console.log(a===b) // it match the value as well as our type.
+
+        // 3. Logical : It works on two or more conditions.
+        // && , || , !
+        let a = 100
+        let b = 120
+        let c = 210
+        // && operator : If their is any false condition , so final result is false.
+        // I    II      R
+        // T    T       T
+        // T    F       F
+        // F    T       F
+        // F    F       F
+        console.log(a < b && b > c)
+
+        // || operator : In this alteast one condition must be true, then final result is true.
+        // I    II      R
+        // T    T       T
+        // T    F       T
+        // F    T       T
+        // F    F       F
+        console.log(a < b || b > c)
+        
+        // ! : Reverse the decision.
+        console.log(!(a < b || b > c))
+        
+        // 4. Unary
+        // 5. Assignment
+        // 6. Ternary
+
+    </script>
+</body>
+
+</html>
