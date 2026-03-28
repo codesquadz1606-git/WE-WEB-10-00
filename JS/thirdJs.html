@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // String
+        // What is String?
+        // String is a sequence of characters in "".
+
+        let name="Ayush Kumar";
+        console.log(name)
+        console.log(typeof(name))
+        console.log(name.length)
+
+
+        // In string we access each character using indices
+        // String works on zero based indexing.
+
+        //  starts from 0 and end at length-1.
+
+        // console.log(name[0])
+        // console.log(name[1])
+        // console.log(name[2])
+
+        // for(let i=0;i<name.length;i++){
+        //     console.log(name[i])
+        // }
+
+        // Functions : length
+        // 2. toUpperCase/toLowerCase
+        console.log(name.toUpperCase())
+        console.log(name.toLowerCase())
+
+        // 3. trim()/trimLeft()/trimRight() : removes the extra spaces from left & right
+        let name1="     sudheer     Kumar      "
+        console.log(name1.trim())
+        console.log(name1.trimLeft())
+        console.log(name1.trimRight())
+
+        // 4. Slice : brings out the slice from a variable
+        console.log(name.slice()) // RETURNS FULL STING
+        console.log(name.slice(0,5))// STARTS WITH 0 AND ENDS WITH END-1.
+        console.log(name.slice(5)) // STARTS WITH 5 TILL END.
+
+        // 5. starsWith()/endsWith() : check whether the character starts with it or not.
+        console.log(name.startsWith("A"))
+        console.log(name.endsWith("r"))
+
+        // 6. replace
+        console.log(name.replace("Kumar","Srivastava"))
+
+        // 7. concat()
+        let fname="Sumit";
+        let lname="Jain";
+        console.log(fname.concat(" ",lname))
+
+        // Array : Our firt data structure
+        // What is array?
+        // In JS data is stored in array is in continous memory location, and can store multiple elements of diffrent data type.
+
+        let arr=[10,"Ayush",true,98.76]
+        console.log(arr)
+
+        // Array works on zero based Indexing
+
+        // 4 methods
+        // push : add at the end of the array,
+        // pop : remove from the end of the array,
+        // shift : remove from the starting of the array,
+        // unshift : add at the start of the array
+
+        // arr.push(100)
+        // console.log(arr)
+        // arr.pop()
+        // console.log(arr)
+        // arr.shift()
+        // console.log(arr)
+        // arr.unshift(500)
+        // console.log(arr)
+
+        // splice(idxstart,no.ofelemt(delete),no.ofelement(add))
+        // arr.splice(2,2,"Shivam","Priyanshu")
+        // arr.splice(2,0,"Shivam","Priyanshu")
+
+        // arr.splice(2,2)
+        // console.log(arr)
+
+        // sort,
+        let newarr=[10,23,12,67,91,21]
+        // console.log(newarr.sort())
+
+        // reverse,
+        // console.log(newarr.reverse())
+
+        // Method chaining
+        // console.log(newarr.sort().reverse())
+
+        // concat,
+        // let a=arr.concat(newarr,[100,200,300])
+        // console.log(a)
+
+        // split,
+        // let newA="Ayush-Kumar"
+        // let g=newA.split("-") // converts string to array.
+        // console.log(g)
+
+        // join
+        // let n=["A","Y","U","1","2","3"] // converts array to string.
+        // console.log(n.join("-"))
+
+
+        // Take a name(A,M,D,G,others) as input , find the first character of name and push that name in respective array.
+        nameA=[]
+        nameM=[]
+        nameD=[]
+        nameG=[]
+        others=[]
+
+        let fullname= prompt("Enter Name")
+
+        if(fullname.startsWith("A")){
+            nameA.push(fullname)
+        }
+        else if(fullname.startsWith("M")){
+            nameM.startsWith(fullname)
+        }
+        else if(fullname.startsWith("G")){
+            nameG.startsWith(fullname)
+        }
+        else if(fullname.startsWith("D")){
+            nameD.startsWith(fullname)
+        }
+        else{
+            others.push(fullname)
+        }
+    </script>
+
+</body>
+</html>
