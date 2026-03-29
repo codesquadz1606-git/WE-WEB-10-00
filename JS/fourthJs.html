@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // 2-D Array
+        let nesArr=[
+            [10,20,30],
+            [40,50,60],
+            [70,80,90]
+        ]
+
+        // console.log(nesArr[0][0])
+        // console.log(nesArr[0][1])
+        // console.log(nesArr[0][2])
+        // console.log(nesArr[1][0])
+        // console.log(nesArr[1][1])
+        // console.log(nesArr[1][2])
+        // console.log(nesArr[2][0])
+        // console.log(nesArr[2][1])
+        // console.log(nesArr[2][2])
+
+        // for(let i=0;i<nesArr.length;i++){
+        //     console.log(nesArr[i])
+        //     for(let j=0;j<nesArr[i].length;j++){
+        //         console.log(nesArr[i][j])
+        //     }
+        // }
+
+        // Objects : It is a combination of key & value pair, unstructred manner to store data.
+
+        // let obj={
+        //     name:"Shubham",
+        //     city:"Noida",
+        //     age:25
+        // }
+
+        // console.log(obj)
+
+        // Ist method : How to call the key of an object?
+        // console.log(obj["name"])
+        // console.log(obj["city"])
+        // console.log(obj["age"])
+        
+        // IInd method : How to call the key of an object?
+        // console.log(obj.age)
+        // console.log(obj.name)
+
+        // obj["age"]=21
+        // obj["pincode"]=201002
+
+        // Objects of Objects
+        let obj={
+            name:"Shubham",
+            city:"Noida",
+            age:25,
+            skils:{
+                skill1:"Frontend",
+                skill2:"Devops"
+            }
+        }
+        // console.log(obj)
+        // console.log(obj.skils.skill2)
+
+        // Array of Objects : JSON(Javascript object Notation) DATA
+        let arrObj=[
+            {
+                name:"Vishal",
+                age:23,
+                city:"Noida"
+            },
+            {
+                name:"Vishal1",
+                age:23,
+                city:"Noida"
+            },
+            {
+                name:"Vishal2",
+                age:23,
+                city:"Noida"
+            },
+            {
+                name:"Vishal3",
+                age:23,
+                city:"Noida"
+            }
+        ]
+
+        // console.log(arrObj)
+        // for(let i=0;i<arrObj.length;i++){
+        //     console.log(arrObj[i].name)
+        // }
+
+        // Destructuring Array & Objects
+        
+        // let data=["Shivang","Ghaziabad",23,"Btech","CS",201002,"Coding"];
+        // // spread operator : ...
+        // let [name,city,...others]=data
+        // console.log(name)
+        // console.log(city)
+        // console.log(others)
+
+        // let newObj={
+        //     empname:"Hemant",
+        //     empcity:"Meerut",
+        //     occupation:"Software Developer"
+        // }
+
+        // let {empname,empcity,occupation}=newObj
+        // console.log(empname)
+        // console.log(empcity)
+        // console.log(occupation)
+
+        // What is Shallow Copy & Deep Copy
+        // let newarr=["Kapil","Kolkata"]
+        // let copy=newarr // this is copied on the refernce.
+
+        // let [...copy]=newarr // creating array but without any refernce.(Shallow Copy)
+
+        // copy[0]="Lalit"
+        // console.log(copy)
+        // console.log(newarr)
+
+        let empData={
+            name:"Gautam",
+            city:"Mumbai",
+            assets:{
+                asset1:"House",
+                asset2:"Stocks",
+                asset3:"Cars"
+            }
+        }
+
+        // Here we are copying data without any previous reference only till first level,as soon as we talk about nested object it is still on the refernce.
+        // let {...data}=empData // shallow
+        // data.city="Delhi"
+        // data.assets.asset3="Bikes"
+        
+        // To remove all the refernce we use this method which is called Deep copy.
+        let data=JSON.parse(JSON.stringify(empData)) // now we have removed all the refernce.
+        // JSON.stringfy: converts object to string
+        // JSON.parse: converts string to object
+
+        data.city="Delhi"
+        data.assets.asset3="Bikes"
+
+        console.log(data)
+        console.log(empData)
+    </script>
+</body>
+</html>
