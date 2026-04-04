@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Tag -->
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+
+    <!-- Class -->
+    <div class="new">This is Class</div>
+
+    <!-- Id -->
+    <div id="unique">This is Unique Div</div>
+    
+    <script>
+        // What is Functions?
+        // A block of code that is written for a certian task or a work and is executed when it is called.
+
+        // function func_name(){} // function ban gaya
+        // func_name() // calling a function
+
+        // Normal Function
+        // function hello(){
+        //     console.log("Hello Everyone")
+        // }
+        // hello()
+
+        // Parameterised Function
+        // What is parameter?
+        // A variable that are in the scope of the function.
+        
+        // function add(a,b,c){ // parameters
+        //     console.log(a+b+c)
+        // }
+
+        // console.log(add(10,20,30)) // call + printing value of a function
+
+        // add(10,12,13) // arguments
+
+        // Default Parameters
+        // Note : Default parameter will always the last parameter of the function
+        // function fullname(fname,city,age,lname="Srivastava"){
+        //     console.log(fname,lname,city,age)
+        // }
+
+        // fullname("Nikhil","Delhi",25)
+
+        // Returning to a function : using return keyword
+        // function add1(a,b,c){ // parameters
+        //     return (a+b+c)
+        // }
+        // console.log(add1(10,20,30)); // call + printing value of a function
+
+        // Function Expression
+        // let multiply=function(a,b){
+        //     console.log(a*b)
+        // }
+
+        // Arrow Function
+        // let sum = ()=>{
+        //     console.log("Arrow Function")
+        // }
+
+
+        // DOM : DOCUMENT OBJECT MODAL
+
+        // Topic 1 : Access the HTML element
+            // Method 1: getElementById,getElementByTagName,getElementByClassName
+            // let classEl=document.getElementsByClassName("new") // returns the array.
+            // console.log(classEl[0])
+
+            // let tagEl=document.getElementsByTagName("h1") // returns the array
+            // console.log(tagEl)
+            // for(let i=0;i<tagEl.length;i++){
+            //     console.log(tagEl[i])
+            // }
+
+            // let idEl=document.getElementById("unique") // returns only the single element
+            // console.log(idEl)
+
+            // Method 2: querySelector & querySelectorAll
+            // let el1=document.querySelector("h1")
+            // let el1=document.querySelectorAll("h1")
+            
+            // let el1=document.querySelector(".new") // for calling class use .
+            // let el1=document.querySelector("#unique") // for calling id use #
+            // console.log(el1)
+
+        // Topic 2 : Editing the Values of the Tag
+            // 2 Functions : innerHTML , innerText
+            let el=document.querySelector(".new")
+
+            // el.innerText="<b>Hello</b>" // here html tag is also read as a text.
+            // el.innerHTML="<b>Hello</b>" // here tag is read as a tag.
+
+            // console.log(el.innerHTML)
+            // console.log(el.innerText)
+
+        // Topic 3 : Creating an HTML element
+            // Step 1: How to create Element
+            let p=document.createElement("p") // tagname which we have to create
+            p.innerText="This is my paragraph"
+
+            // Step 2 : How to push this element in html document.
+            let body=document.querySelector("body")
+
+            // append : Add at the end, 
+            body.append(p)
+            // prepend : add at the starting, 
+            body.prepend(p)
+            // appendChild : same as append , 
+            body.appendChild(p)
+            // insertAdjacentElement : between the elements.
+            // beforebegin , afterbegin , beforeend , afterend
+
+            let h1=document.querySelectorAll("h1")
+            // h1[1].insertAdjacentElement("afterend",p)
+            // h1[1].insertAdjacentElement("beforebegin",p)
+            // h1[1].insertAdjacentElement("afterbegin",p)
+            h1[1].insertAdjacentElement("beforeend",p)
+            
+    </script>
+</body>
+</html>
