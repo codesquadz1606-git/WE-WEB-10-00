@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .color{
+        background-color: green;
+    }
+
+    .font{
+        font-size: 4rem;
+    }
+
+    .display-none{
+        display: none;
+    }
+
+    .display-block{
+        display: block;
+    }
+</style>
+<body>
+    
+    <h1 class="color">Hello Everyone</h1>
+
+    <button>Click Me</button>
+
+    <script>
+        let h1=document.querySelector("h1")
+
+        // DOM
+        // Topic 4: Style the HTML Element
+        // .style method for styling any object , we can also call this an inline css.
+
+        // h1.style.backgroundColor="blue"
+        // h1.style.color="red"
+        // h1.style.fontSize="50px"
+
+        // Topic 4 : How we can add any class to our element?
+            // Method 1 : getter & setter
+                // What is getter & setter?
+                // Here we use .getAttribute & .setAttribute
+
+                // Getter : it brings out the attribute value.
+                // console.log(h1.getAttribute("style"))
+
+                // Setter : It sets the value of the attribute.
+                // h1.setAttribute("class","font")
+
+                // Here , the problem is that it is overlapping the previous value with the new value.
+
+            // Method 2 : Classlist
+                // .classList : .add , .remove , .contains , .toggle(it is switch)
+                // h1.classList.add("font")
+                // h1.classList.remove("color")
+                // console.log(h1.classList.contains("color"))
+                // h1.classList.toggle("color") // on
+                // h1.classList.toggle("color") // off
+                // h1.classList.toggle("color") // on
+
+        // What is event Listener?
+        // Event listener means that their is some event occured on our page.
+        // click, keypress,submit
+
+        // What is addEventListener()?
+        // It is a function that contains some event and a callback function?
+
+        // let btn=document.querySelector("button")
+        // btn.addEventListener("click",()=>{
+        //     console.log("Clicked")
+        // })
+
+
+        // btn.addEventListener("click",()=>{
+        //     h1.classList.toggle("display-none")
+        // })
+
+        // form-handling , input feild handling , project 
+        
+    </script>
+</body>
+</html>
